@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SNAKE GAME</title>
+        <link rel="stylesheet" type="text/css" href="Snake.css">
+
+</head>
+
+<body onkeydown="change(event)">
+
+<h1 > ZMIJICA <div id="score"> <span >SCORE:</span> <span id="sc"> 0 </span>  </div> </h1>
+
+
+<div class="gamestart" id="gamess">
+    <div id="centar">
+    <div class="insert">
+        <input class="inp" id="in" type="text" placeholder="TYPE IN YOUR NAME">
+    </div>
+
+    <div class="level">
+        <button class="lev" onclick="level(1,this)"> EASY  </button>
+        <button class="lev" onclick="level(2,this)"> MEDIUM   </button>
+        <button class="lev" onclick="level(3,this)"> HARD  </button>
+        <button class="lev" id="nema">dssa </button>
+    </div>
+    <div>
+        <button class="start" onclick="start()">   START THE GAME  </button>
+    </div>
+        <div id="bord">
+        <input type="checkbox" id="check" name="border"> <label for="check"> DO YOU WANT BORDER?</label>
+        </div>
+    </div>
+</div>
+
+<div class= "platno " id="plat">
+    <div id="inplat">
+        <div class="end" id="name"> NEMA NISTA </div>
+       <div class="end"><button class="btn" onclick="startagain()"> KLIKNI NA MENE</button></div>
+        <div class="end"><button class="btn" onclick="isteopcije()"> ISTE OPCIJE?  </button></div>
+       <div class="end"><button class="btn" onclick="meni()"> VRATITI SE U MENI </button></div>
+    </div>
+
+</div>
+
+
+<script src="Snake.js">
+</script>
+
+</body>
+</html>
